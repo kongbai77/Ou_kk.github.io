@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>picture try</title>
+      <link href="/2022/07/22/picture-try/"/>
+      <url>/2022/07/22/picture-try/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2022/07/22/picture-try/Users/admin/AppData/Roaming/Typora/typora-user-images/image-20220722172918599.png" alt="image-20220722172918599"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SSM框架</title>
+      <link href="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/"/>
+      <url>/2022/07/22/SSM%E6%A1%86%E6%9E%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、spring"><a href="#一、spring" class="headerlink" title="一、spring"></a>一、spring</h2><h3 id="x3D-x3D-1-IOC入门案例-x3D-x3D"><a href="#x3D-x3D-1-IOC入门案例-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;1.IOC入门案例&#x3D;&#x3D;"></a>&#x3D;&#x3D;1.IOC入门案例&#x3D;&#x3D;</h3><h5 id="①导入Spring坐标（在pom-xml中）"><a href="#①导入Spring坐标（在pom-xml中）" class="headerlink" title="①导入Spring坐标（在pom.xml中）"></a>①导入Spring坐标（在pom.xml中）</h5><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/1.jpg" style="zoom:67%;"><p>②定义Spring管理的类（接口）</p><p>BookDao.java（接口）</p><p>BookDaoImpl.java（实现类）</p><p>BookService.java（接口）</p><p>BookServiceImpl.java（实现类）</p><h5 id="③创建Spring配置文件，配置对应类作为Spring管理的Bean（applicationContext-xml）"><a href="#③创建Spring配置文件，配置对应类作为Spring管理的Bean（applicationContext-xml）" class="headerlink" title="③创建Spring配置文件，配置对应类作为Spring管理的Bean（applicationContext.xml）"></a>③创建Spring配置文件，配置对应类作为Spring管理的Bean（applicationContext.xml）</h5><p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722093528669.png" alt="image-20220722093528669"></p><h5 id="④初始化IOC容器（Spring核心容器），通过容器获取bean"><a href="#④初始化IOC容器（Spring核心容器），通过容器获取bean" class="headerlink" title="④初始化IOC容器（Spring核心容器），通过容器获取bean"></a>④初始化IOC容器（Spring核心容器），通过容器获取bean</h5><p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722093804875.png" alt="image-20220722093804875"></p><p>运行结果：</p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722094336686.png" alt="image-20220722094336686" style="zoom: 67%;"><h3 id="x3D-x3D-2-DI入门案例-x3D-x3D"><a href="#x3D-x3D-2-DI入门案例-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;2.DI入门案例&#x3D;&#x3D;"></a>&#x3D;&#x3D;2.DI入门案例&#x3D;&#x3D;</h3><h5 id="①删除使用new形式创建对象的代码"><a href="#①删除使用new形式创建对象的代码" class="headerlink" title="①删除使用new形式创建对象的代码"></a>①删除使用new形式创建对象的代码</h5><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722100048743.png" alt="image-20220722100048743" style="zoom:67%;"><h5 id="②提供依赖对象对应的setter方法"><a href="#②提供依赖对象对应的setter方法" class="headerlink" title="②提供依赖对象对应的setter方法"></a>②提供依赖对象对应的setter方法</h5><p>这个set方法是容器在执行，容器把对象给类</p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722100156006.png" alt="image-20220722100156006" style="zoom:67%;"><h5 id="③配置service与dao之间的关系"><a href="#③配置service与dao之间的关系" class="headerlink" title="③配置service与dao之间的关系"></a>③配置service与dao之间的关系</h5><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722100820148.png" alt="image-20220722100820148" style="zoom:67%;"><h3 id="x3D-x3D-3-bean的配置-x3D-x3D"><a href="#x3D-x3D-3-bean的配置-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;3.bean的配置&#x3D;&#x3D;"></a>&#x3D;&#x3D;3.bean的配置&#x3D;&#x3D;</h3><h5 id="①bean的基础配置（id、class）"><a href="#①bean的基础配置（id、class）" class="headerlink" title="①bean的基础配置（id、class）"></a>①bean的基础配置（id、class）</h5><p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722103908449.png" alt="image-20220722103908449"></p><h5 id="②bean的别名配置"><a href="#②bean的别名配置" class="headerlink" title="②bean的别名配置"></a>②bean的别名配置</h5><p>在spring容器中，无论是id还是name都是bean对象</p><p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722104757063.png" alt="image-20220722104757063"></p><h5 id="③bean的作用范围配置"><a href="#③bean的作用范围配置" class="headerlink" title="③bean的作用范围配置"></a>③bean的作用范围配置</h5><p>spring管理对象时默认bean为单例（可复用）</p><p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722105224885.png" alt="image-20220722105224885"></p><img src="/2022/07/22/SSM%E6%A1%86%E6%9E%B6/Users\admin\AppData\Roaming\Typora\typora-user-images\image-20220722105628216.png" alt="image-20220722105628216" style="zoom:67%;"><h3 id="x3D-x3D-4-bean实例化-x3D-x3D"><a href="#x3D-x3D-4-bean实例化-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;4.bean实例化&#x3D;&#x3D;"></a>&#x3D;&#x3D;4.bean实例化&#x3D;&#x3D;</h3><h5 id="①通过构造方法"><a href="#①通过构造方法" class="headerlink" title="①通过构造方法"></a>①通过构造方法</h5>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Dao(Data Access Object)</title>
+      <link href="/2022/07/21/Dao-Data-Access-Object/"/>
+      <url>/2022/07/21/Dao-Data-Access-Object/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h3><p>Dao设计模式，称为数据访问对象，它是对于数据库操作的一种设计方式，主要做数据持久层的工作，<strong>负责与数据库进行联络</strong>的一些任务都封装在此，把Dao设计为一个通用接口，提供<strong>对数据库进行增、删、改、查</strong>的一系列操作数据库的抽象方法。利用Dao接口提供的抽象方法对数据库进行操作就大大降低代码重复，间接提供程序的效率、性能。</p><p>Dao层属于一种比较底层、基础的操作，具体到对于某个表、某个实体的增删改查。可以理解为有多少张表就有多少个Dao层。</p><h3 id="2-Dao层设计"><a href="#2-Dao层设计" class="headerlink" title="2.Dao层设计"></a>2.Dao层设计</h3><p>首先，设计dao层的接口，然后在spring的配置文件中定义此接口的实现类，就可以在模块中调用此接口进行数据业务的处理，无需关心此接口的具体实现类是哪个类。dao层的数据源配置，以及有关数据库连接参数都在spring配置文件中进行配置。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Dao </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JDK多个版本的配置及各种出现的问题</title>
+      <link href="/2022/07/15/JDK%E5%A4%9A%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%90%84%E7%A7%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2022/07/15/JDK%E5%A4%9A%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%90%84%E7%A7%8D%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h5 id="1-电脑上安装了两个版本的jdk"><a href="#1-电脑上安装了两个版本的jdk" class="headerlink" title="1.电脑上安装了两个版本的jdk"></a>1.电脑上安装了两个版本的jdk</h5><p>我安装的是1.8和16（先安装的16后安装的1.8）</p><p>环境变量的配置：</p><p>​①如图新建三个变量，‘JAVA16_HOME’对应16版本，‘JAVA8_HOME’</p><p>对应1.8版本，‘JAVA_HOME’对应自己需要的版本。（此处我以1.8版本</p><p>为例）</p><p>​ ②如图为CLASSPATH的配置</p><p>③</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JDK </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo + github 搭建个人博客</title>
+      <link href="/2022/07/14/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+      <url>/2022/07/14/%E7%AC%AC%E4%B8%80%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[<h5 id="1-下载node-js和git"><a href="#1-下载node-js和git" class="headerlink" title="1.下载node.js和git"></a>1.下载node.js和git</h5><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p><h5 id="2-注册github账号并创建仓库"><a href="#2-注册github账号并创建仓库" class="headerlink" title="2.注册github账号并创建仓库"></a>2.注册github账号并创建仓库</h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决hexo主题更换</title>
+      <link href="/2022/07/14/%E8%A7%A3%E5%86%B3hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2/"/>
+      <url>/2022/07/14/%E8%A7%A3%E5%86%B3hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<h5 id="1-主题网址下载"><a href="#1-主题网址下载" class="headerlink" title="1.主题网址下载"></a>1.主题网址下载</h5><p><a href="https://hexo.io/themes/">https://hexo.io/themes/</a></p><h5 id="2-点击想要的主题进入其博主的github仓库"><a href="#2-点击想要的主题进入其博主的github仓库" class="headerlink" title="2.点击想要的主题进入其博主的github仓库"></a>2.点击想要的主题进入其博主的github仓库</h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> themes </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/07/13/hello-world/"/>
+      <url>/2022/07/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
